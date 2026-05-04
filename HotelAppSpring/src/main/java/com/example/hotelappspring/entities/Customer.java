@@ -9,17 +9,17 @@ import lombok.NoArgsConstructor;
 @Table(name = "customers")
 @AllArgsConstructor
 @NoArgsConstructor
-public class customer {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    dùng indentity để match với id đã tạo
     private Integer id;
 
-    @Column(nullable = false, name = "firstName")
-    private String first_Name;
+    @Column(nullable = false, name = "first_Name")
+    private String firstName;
 
-    @Column(nullable = false, name = "lastName")
-    private String last_Name;
+    @Column(nullable = false, name = "last_Name")
+    private String lastName;
 
     @Column(nullable = false, name = "email")
     private String email;

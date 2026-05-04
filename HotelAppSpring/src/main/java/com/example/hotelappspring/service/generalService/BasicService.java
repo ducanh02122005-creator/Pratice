@@ -1,10 +1,12 @@
 package com.example.hotelappspring.service.generalService;
 
+import com.example.hotelappspring.dtos.ReservationDTO;
+import com.example.hotelappspring.entities.Reservation;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponentsBuilder;
 
-public abstract class basicService<Entity, DTO, UPDATE_REQ, ID> {
+public abstract class BasicService<Entity, DTO, UPDATE_REQ, ID> {
 
     protected abstract JpaRepository<Entity, ID> getRepository();
 
@@ -74,4 +76,6 @@ public abstract class basicService<Entity, DTO, UPDATE_REQ, ID> {
 
         return ResponseEntity.noContent().build();
     }
+
+
 }

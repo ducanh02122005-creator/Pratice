@@ -3,6 +3,8 @@ package com.example.hotelappspring.mapper;
 import lombok.Data;
 
 @Data
-public class updateCustomerRequest {
+public class UpdateCustomerRequest {
+    private String firstName;
+    private String lastName;
     private String email;
 }

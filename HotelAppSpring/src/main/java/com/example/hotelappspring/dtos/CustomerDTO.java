@@ -1,6 +1,5 @@
 package com.example.hotelappspring.dtos;
 
-import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,9 +8,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class customerDTO {
+public class CustomerDTO {
     private Integer id;
-    private String first_Name;
-    private String last_Name;
+    private String firstName;
+    private String lastName;
     private String email;
 }
